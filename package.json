@@ -1,0 +1,32 @@
+{
+  "name": "express-jwt-sequelize-boilerplate",
+  "version": "0.0.1",
+  "description": "express rest api server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "prod": "nodemon index.js >> app.log $",
+    "unit": "mocha tests/",
+    "lint": "eslint --ignore-path .gitignore .",
+    "setup": "npm install nodemon sequelize-cli mocha -g"
+  },
+  "keywords": [
+    "rest",
+    "api",
+    "server",
+    "express"
+  ],
+  "author": "Michael Attenberger <attenberger@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "nodemon": "^1.18.4",
+    "sequelize": "^4.38.0",
+    "sqlite3": "^4.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-strongloop": "^2.1.0"
+  }
+}

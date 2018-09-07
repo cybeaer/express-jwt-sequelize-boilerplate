@@ -1,2 +1,2 @@
-# express-jwt-sequelize-boilerplate
+# server
 
