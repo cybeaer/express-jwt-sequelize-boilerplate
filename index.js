@@ -1,4 +1,6 @@
-let express = require('Express');
+'use strict';
+
+let express = require('express');
 let app = express();
 
 let apps = require('./src/controllers/app.js');
@@ -10,6 +12,6 @@ app.get('/', apps.index);
 app.get('/login', auth.login);
 app.post('/auth', auth.auth);
 
-app.listen(3000, function () {
-    console.log('Server listening on Port 3000.');
+app.listen(3000, function(){
+  console.log('Server listening on Port 3000.');
 });
